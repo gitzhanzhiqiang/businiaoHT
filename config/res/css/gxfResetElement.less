@@ -1,0 +1,234 @@
+.ggg_user{
+     //form表单 无边框
+    .noborder{
+        .el-input__inner{
+            border:0!important;
+        }
+        .el-textarea{
+            textarea{
+                // resize : none;
+                // border:0;
+            }
+        }
+    }
+    .haveborder{
+        .el-input__inner{
+                border: 1px solid #bfcbd9!important;
+        }
+        .el-textarea{
+            textarea{
+                resize : none;
+                border: 1px solid #bfcbd9!important;
+            }
+        }
+    }
+    .font_bold{
+        font-weight:bold;
+    }
+    //复文本弹窗
+    .autoAlert{
+        //复文本宽度
+        .weditor_width {
+            .filter-container {
+                width: 100%!important;
+                overflow-x: auto!important;
+            }
+        }
+        .el-dialog__body{
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    }
+     .widthLang{ 
+         .el-select {
+            display:block!important;
+        }
+     }
+    .el-dialog__body{
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .fl{
+        float: left;
+    }
+    .table{
+        border-collapse:collapse;
+        border-spacing:0;
+        border-bottom:1px solid #e2e2e2;
+        tr{
+            td{
+                padding:10px 15px!important;
+                border-bottom:0;
+                border-right:0;
+                &:last-child{
+                     border-right:1px solid #e2e2e2;
+                }
+            }
+            &:last-child{
+                td{
+                    // border-bottom:1px solid #e2e2e2;
+                }
+            }
+        }
+        .el-form-item {
+            margin-bottom: 0!important;
+        }
+    }
+    //组件显示图片
+    .upLoadingAlert{
+        .el-upload-list__item.is-success.el-list-enter-to{
+            width:120px;
+            display: inline-block;
+            margin-right:10px;
+        }
+        .el-upload-list__item .is-success{
+            width:120px;
+            display: inline-block;
+            margin-right:10px;
+        }
+        .el-upload-list--picture .el-upload-list__item {
+            width:120px;
+            display: inline-block;
+            margin-right:10px;
+        }
+    }
+    //直接显示图片
+    .upLoadingAlert1{
+          .el-upload-list__item.is-success.el-list-enter-to{
+            width:220px;
+            height:220px;
+            display: inline-block;
+            margin-right:10px;
+        }
+        .el-upload-list__item .is-success{
+            width:220px;
+            height:220px;
+            display: inline-block;
+            margin-right:10px;
+            text-align: center;
+        }
+        .el-upload-list--picture .el-upload-list__item {
+            width:220px;
+            height:220px;
+            display: inline-block;
+            margin-right:10px;
+        }
+        .el-upload-list__item-thumbnail{
+            width:200px;
+            height:200px;
+            z-index: 0;
+        }
+    }
+    // 详情身份证
+    .idCardMax{
+        img{
+            max-width: 300px;
+        }
+    }
+}
+.w-main{
+    // width:80%;
+    height:96%;
+    // background: url('../img/centent.png') no-repeat !important;
+    overflow-y:scroll;
+}
+ @media screen and (max-width:990px){
+     .mainContent{
+         min-width: 1200px!important;
+         overflow-x: auto!important;
+     }
+    .el-dialog{
+        &.el-dialog--small{
+            min-width:800px;
+            overflow: auto;
+        }
+    }
+}
+.el-picker-panel.el-date-range-picker{
+    td,th{ 
+      border: 0; 
+      padding: 0!important;
+    }
+    tr,th,td{ 
+        text-align: center;
+    }
+}
+.el-picker-panel.el-date-picker{
+    td,th{ 
+      border: 0; 
+      padding: 0!important;
+    }
+    tr,th,td{ 
+        text-align: center;
+    }
+    tbody tr:hover{
+        background-color: transparent;
+    }
+}
+.app-container {
+    margin: 10px 10px 0 10px;
+    .filter-container {
+        margin-top: 20px;
+      .rightData {
+         margin-right: 100px;
+      } 
+      .tableheader{
+          background-color: #a0d468 !important;
+          padding: 10px;
+          color: white;
+          border-radius: 2px 2px 0 0;
+          margin-bottom: 20px;
+      }
+    }
+    .tablelayer{
+         padding: 0 10px;
+    }
+  }
+  //消息自定义类名
+.MessageCustomClass{
+    z-index: 2007!important;
+    // 弹框zindex2006
+}
+
+.input{
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 100%;
+    vertical-align: middle;
+}
+
+.tbale {
+    border-collapse: collapse;
+    th{
+        color: #909399;
+    }
+    th,
+    td {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        border-left: 1px solid #ebeef5;;
+        border-top: 1px solid #ebeef5;;
+        &:last-child {
+            border-right: 1px solid #ebeef5;;
+        }
+    }
+    tbody{
+        border-bottom: 1px solid #ebeef5;
+         border-top: 3px solid #a0d468!important;
+    }
+}
